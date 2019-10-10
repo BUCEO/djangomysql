@@ -1,6 +1,9 @@
 version: '2'
 services:
     app:
+        build:
+            context: ./
+            dockerfile: Dockerfile
         image: django
         ports:
             - 8000:8000
